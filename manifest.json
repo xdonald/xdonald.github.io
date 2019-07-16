@@ -1,8 +1,8 @@
 {
   "name": "XDonald",
+  "short_name": "XDonald",
   "background_color": "#fdc606",
   "theme_color": "#FFFFFF",
-  "short_name": ".",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/xdonald.github.io",
