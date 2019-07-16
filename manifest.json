@@ -4,8 +4,8 @@
   "theme_color": "#FFFFFF",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "xdonald.github.io",
-  "start_url": "xdonald.github.io",
+  "Scope": "/xdonald.github.io",
+  "start_url": "/xdonald.github.io",
   "icons": [
     {
       "src": "img/icon-72x72.png",
