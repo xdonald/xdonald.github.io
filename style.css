@@ -202,12 +202,13 @@ a{
 }
 
 .token__link--gift{
-    font-size: 20px;
+    font-size: 7vw;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .token__link--free{
-    font-size: 14px;
+    font-size: 4vw;
 }
 
 
