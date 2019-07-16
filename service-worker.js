@@ -3,6 +3,8 @@ const CACHE_NAME = 'xdonald-1.1';
 // List of files which are store in cache.
 let filesToCache = [
     '/',
+    '/text.html',
+    '/email.html',
 ];
 
 self.addEventListener('install', function (evt) {
