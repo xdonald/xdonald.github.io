@@ -1,11 +1,10 @@
 {
   "name": "XDonald",
-  "theme_color": "#fdc606",
   "background_color": "#fdc606",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/xdonald.tk",
-  "start_url": "/xdonald.tk",
+  "Scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "img/icon-72x72.png",
