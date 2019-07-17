@@ -1,32 +1,6 @@
-//DATA aktualna:
-var FullDate = new Date();
-var dzien = FullDate.getDate();
-var mies = FullDate.getMonth()+1;
-var rok = FullDate.getFullYear();
-
-var zero = new Array();
-zero[1] = "01";
-zero[2] = "02";
-zero[3] = "03";
-zero[4] = "04";
-zero[5] = "05";
-zero[6] = "06";
-zero[7] = "07";
-zero[8] = "08";
-zero[9] = "09";
-
-if(dzien<=9){
-    var dzien = zero[dzien]; 
-}
-if(mies<=9){
-    var mies = zero[mies]; 
-}
-
-
-document.getElementsByClassName("datee__dzis")[0].innerHTML = "(" + dzien +"."+mies+")";
-sessionStorage.setItem("Vdzien", dzien);
-sessionStorage.setItem("Vmies", mies);
-sessionStorage.setItem("Vrok", rok);
+////DATA aktualna:
+var fulldata = new Date();
+document.getElementsByClassName("datee__dzis")[0].innerHTML = "("+ fulldata.toLocaleString("pl-PL", {day: '2-digit' , month: '2-digit'})+ ")";
 
 
 
