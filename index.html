@@ -21,7 +21,7 @@
             });
         }
     </script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
         <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143998338-3"></script>
     <script>
@@ -31,10 +31,12 @@
       gtag('config', 'UA-143998338-3');
     </script>
 </head>
+
 <body>
     <header class="header">
         <h1 class="header__title">XDonald</h1>
         <p class="header__description">Generator kuponów za ankiety dla McDonald's</p>
+        <div><noscript>Wyrkyto brak obsługi JavaScript w przeglądarce! Strona nie będzie działać odpowiednio!</noscript></div>
     </header>
     <main class="main">
         <article class="article">
@@ -48,88 +50,91 @@
             <h2 class="article__h2">1.Wybierz swój kupon:</h2>
             <p class="article__descr">Kupon na Frytki i Cheeseburgera nie jest generowany oficjalnie!</p>
             <div class="article__text">
-                <div class="food">
-                    <div class="food__img">
+               
+                <div class="food" data-food="lody">
+                    <div class="food__img" data-food="lody">
                         🍦
                     </div>
-                    <div class="food__descr">
+                    <div class="food__descr" data-food="lody">
                         Lody
                     </div>
                 </div>
-                <div class="food">
-                    <div class="food__img">
+                
+                <div class="food" data-food="hamburger">
+                    <div class="food__img" data-food="hamburger">
                         🍔
                     </div>
-                    <div class="food__descr">
+                    <div class="food__descr" data-food="hamburger">
                         Hamburger
                     </div>
                 </div>
-                <div class="food">
-                    <div class="food__img">
+                
+                <div class="food" data-food="frytki">
+                    <div class="food__img" data-food="frytki">
                         🍟 
                     </div>
-                    <div class="food__descr">
+                    <div class="food__descr" data-food="frytki">
                         Frytki <span class="food__warn">*</span>
                     </div>
                 </div>
                 
-                <div class="food">
-                    <div class="food__img">
+                <div class="food" data-food="cheesburger">
+                    <div class="food__img" data-food="cheesburger">
                         🍔
                     </div>
-                    <div class="food__descr">
+                    <div class="food__descr" data-food="cheesburger">
                         Cheesburger <span class="food__warn">*</span>
                     </div>
                 </div>  
+                
             </div>
         </article>
         
         <article class="article">
             <h2 class="article__h2">2.Wybierz date na kuponie: </h2>
             <div class="article__text">
-                <div class="datee">
-                    <div class="datee__descr">
-                        Dziś (16.07)                                       <!--- UZUPEŁNIĆ -->
+                <div class="datee" data-date="0">
+                    <div class="datee__descr" data-date="0">
+                        Dziś <span id="demo" class="datee__dzis" data-date="0"></span>
                     </div>
                 </div>
-                <div class="datee">
-                    <div class="datee__descr">
+                <div class="datee" data-date="-1">
+                    <div class="datee__descr" data-date="-1">
                         Wczoraj
                     </div>
                 </div>
-                <div class="datee">
-                    <div class="datee__descr">
+                <div class="datee" data-date="-2">
+                    <div class="datee__descr" data-date="-2">
                         2 Dni temu
                     </div>
                 </div>
-                <div class="datee">
-                    <div class="datee__descr">
+                <div class="datee" data-date="-3">
+                    <div class="datee__descr" data-date="-3">
                        3 Dni temu
                     </div>
                 </div>
-                <div class="datee">
-                    <div class="datee__descr">
+                <div class="datee" data-date="-4">
+                    <div class="datee__descr" data-date="-4">
                        4 Dni temu
                     </div>
                 </div>
-                <div class="datee">
-                    <div class="datee__descr">
+                <div class="datee" data-date="-5">
+                    <div class="datee__descr" data-date="-5">
                        5 Dni temu
                     </div>
                 </div>
-                <div class="datee">
-                    <div class="datee__descr">
+                <div class="datee" data-date="-6">
+                    <div class="datee__descr" data-date="-6">
                        6 Dni temu
                     </div>
                 </div>
-                <div class="datee">
-                    <div class="datee__descr">
+                <div class="datee" data-date="-7">
+                    <div class="datee__descr" data-date="-7">
                        7 Dni temu
                     </div>
                 </div>
             </div>
         </article>
-        
         
         <article class="article">
             <h2 class="article__h2">3.Wybierz styl wyświetlenia kuponu: </h2>
@@ -140,17 +145,29 @@
                 <div class="token">
                     <div class="toke__img toke__img--text"> </div>
                     <div class="token__descr">
-                        <div class="token__name">Sam tekst</div>
-                        <a href="http://destyy.com/w2SNOM" class="token__link token__link--gift">Wsparcie &#128515;</a>
-                        <a href="text.html" class="token__link token__link--free">Nie wspieram &#128546;</a>
+                        <div class="token__name">
+                            Sam tekst
+                        </div>
+                        <a href="http://destyy.com/w2SNOM" class="token__link token__link--gift" data-wsparcie="true">
+                            Wsparcie &#128515;
+                        </a>
+                        <a href="text.html" class="token__link token__link--free" data-wsparcie="false">
+                            Nie wspieram &#128546;
+                        </a>
                     </div>
                 </div>
                 <div class="token">
                     <div class="toke__img toke__img--email"> </div>
                     <div class="token__descr">
-                        <div class="token__name">Fake Gmail</div>
-                        <a href="http://destyy.com/w2SNDr" class="token__link token__link--gift">Wsparcie &#128515;</a>
-                        <a href="email.html" class="token__link token__link--free">Nie wspieram &#128546;</a>
+                        <div class="token__name">
+                            Fake Gmail
+                        </div>
+                        <a href="http://destyy.com/w2SNDr" class="token__link token__link--gift" data-wsparcie="true">
+                            Wsparcie &#128515;
+                        </a>
+                        <a href="email.html" class="token__link token__link--free" data-wsparcie="false">
+                            Nie wspieram &#128546;
+                        </a>
                     </div>
                 </div>
             </div>
@@ -159,7 +176,5 @@
     <footer class="footer">
         <span>Strona wykorzystuje pliki lokalne</span>
     </footer>
-    
-<noscript>No i chu no i cześć</noscript>
 </body>
 </html>
