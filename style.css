@@ -76,6 +76,9 @@ a{
     justify-content: space-around;
 }
 
+.article__desk{
+    display: none;
+}
 
 
 
@@ -222,11 +225,59 @@ a{
 
 
 
-/** FULL SCREN:
 
-.datee {
-    padding: 0.5vw;
+@media all and (min-width: 1200px) {
+    .main{
+        padding: 0px 15vw 10px 15vw;
+    }
+    
+    .article__desk{
+        display: block;
+    }
+    
+    .article__pho{
+        display: none;
+    }
+    
+    .article__slink{
+        color: #fd8306;
+    }
+    
+    .article__qrkod{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+    .food{
+        width: auto;
+    }
+    
+    
+    .datee {
+        padding: 0.5vw;
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+    }
+    
+    .token{
+        width: 18vw;
+    }
+    
+    .toke__img {
+        width: 150px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    
+    .token__link{
+        font-size: 15px;
+    }
+    
+    .token__link--gift{
+        font-size: 5vh;
+    }
 }
 
 
-*/

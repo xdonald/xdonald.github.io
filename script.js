@@ -1,9 +1,9 @@
-////DATA aktualna:
+//DATA aktualna:
 var fulldata = new Date();
 document.getElementsByClassName("datee__dzis")[0].innerHTML = "("+ fulldata.toLocaleString("pl-PL", {day: '2-digit' , month: '2-digit'})+ ")";
 
 
-
+//Zdarzenia + zapis
 document.addEventListener("click", (event) => {
     let food = event.target.dataset.food;
     if (food) {
@@ -28,3 +28,16 @@ document.addEventListener("click", (event) => {
         sessionStorage.setItem("Vwsparcie", wsparcie);
     }
 })
+
+
+//Service worker
+    const PATH = '/service-worker.js';
+    let isServiceWorkersSupport = ('serviceWorker' in navigator);
+    if (isServiceWorkersSupport) {
+        console.log('Will service worker register?');
+        navigator.serviceWorker.register(PATH).then(function () {
+            console.log("Yes it did.");
+        }).catch(function (err) {
+            console.log("No it didn't. This happened: ", err)
+        });
+    }

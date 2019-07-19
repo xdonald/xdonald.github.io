@@ -4,23 +4,11 @@
     <meta charset="UTF-8">
     <title>XDonald - darmowe kupony MC Donald's</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Darmowe kupony do McDonald's za ankiety">
+    <meta name="description" content="Kupony za ankiety do McDonald's bez wysiyłku!">
     <link rel="icon" href="img/favicon.ico" type="image/png">
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="manifest" href="manifest.json">
-    <script>
-        const PATH = '/service-worker.js';
-        let isServiceWorkersSupport = ('serviceWorker' in navigator);
-        if (isServiceWorkersSupport) {
-            console.log('Will service worker register?');
-            navigator.serviceWorker.register(PATH).then(function () {
-                console.log("Yes it did.");
-            }).catch(function (err) {
-                console.log("No it didn't. This happened: ", err)
-            });
-        }
-    </script>
     <script src="script.js" defer></script>
         <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143998338-3"></script>
@@ -42,7 +30,13 @@
         <article class="article">
             <h2 class="article__h2">Informacje:</h2>
             <div class="article__text">
-                By schować pasek adresu strony  i mieć szybki dostęp do kuponów oraz używać strony jak aplikacji, dodaj strone do ekranu głownego.
+                <span class="article__pho">
+                    By schować pasek adresu strony  i mieć szybki dostęp do kuponów oraz używać strony jak aplikacji, dodaj strone do ekranu głownego.
+                </span>
+                <span class="article__desk">
+                    Strona jest przeznaczona dla urządzeń mobilnych możesz wejść na strone dzięki szybkiemu linkowi: <a href="http://bit.ly/XDonald" class="article__slink">bit.ly/XDonald</a>    lub skanująć QR kod:
+                    <img src="img/qr.png" alt="kod qr" class="article__qrkod">
+                </span>
             </div>
         </article>
         
